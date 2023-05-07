@@ -1,0 +1,26 @@
+/* Estilos generales */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos para el párrafo de la playlist */
+  p {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos para el enlace de la playlist */
+  a {
+    color: #4CAF50;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #3e8e41;
+  }
+  
