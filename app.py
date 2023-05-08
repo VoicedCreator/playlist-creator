@@ -14,7 +14,7 @@ redirect_uri = os.getenv('SPOTIFY_REDIRECT_URI')
 app = Flask(__name__)
 
 # Configurar la autenticación de Spotify
-auth_manager = SpotifyOAuth(client_id=client_id, client_secret=client_secret, redirect_uri=redirect_uri, scope=["playlist-modify-private", "playlist-modify-public"], cache_path='.spotifycache-username')
+auth_manager = SpotifyOAuth(client_id=client_id, client_secret=client_secret, redirect_uri=redirect_uri, scope=["playlist-modify-private", "playlist-modify-public"])
 sp = spotipy.Spotify(auth_manager=auth_manager)
 
 # Definir la ruta de inicio
