@@ -58,7 +58,7 @@ def playlist():
                 track_uris.append(items[0]['uri'])
 
     if len(track_uris) > 1:
-        results = sp.recommendations(seed_tracks=track_uris, limit=50)
+        results = sp.recommendations(seed_tracks=track_uris, limit=20)
         track_uris += [track['uri'] for track in results['tracks']]
         playlist_name = f"Playlist generada a partir de {len(song_names)} canciones"
         playlist = sp.user_playlist_create(user=sp.me()['id'], name=playlist_name, public=False, collaborative=False, description='')
